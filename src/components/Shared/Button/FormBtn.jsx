@@ -1,13 +1,11 @@
 
-
-const PrimaryBtn = ({text, onClick,type="button", className="", ...props}) => {
+const FormBtn = ({text, onClick,type="button", className=""}) => {
     return (
-        <button 
+         <button 
         type={type}
         onClick={onClick}
-        {...props}
         className={`bg-primary text-white text-lg font-medium px-4 py-2 rounded-md cursor-pointer hover:bg-secondary duration-300 ease-in-out ${className}`}>{text}</button>
     );
 };
 
-export default PrimaryBtn;
+export default FormBtn;
